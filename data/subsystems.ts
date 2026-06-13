@@ -1,5 +1,10 @@
 import type { Subsystem } from "./types";
 
+// Short intro for the Robot / Engineering page (PRD §6.5), grounded in the build
+// blog (the June 8, 2026 post). No CAD renders or photos exist yet.
+export const robotIntro =
+  "We're deep into our off-season build for the 2026 season. The design team has finished CAD for the core subsystems and the mechanical team has started fabrication. We don't have CAD renders or build photos to share just yet — here's where each subsystem stands today.";
+
 // Robot subsystems (PRD §6.5): drivetrain, intake, slides, transfer, brake.
 // Status and copy are drawn from the build blog (the June 1 and June 8, 2026
 // posts in data/blog.ts), as directed by PRD §6.5. Images are intentionally
