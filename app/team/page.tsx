@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/page-header";
 import { Reveal } from "@/components/reveal";
-import { PersonCard } from "@/components/person-card";
+import { MemberCard } from "@/components/member-card";
 import { members, rosterNote, joinCta } from "@/data/members";
 import { siteConfig } from "@/data/site-config";
 
@@ -18,10 +18,12 @@ export default function TeamPage() {
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {members.map((member, i) => (
           <Reveal key={member.id} delay={(i % 4) * 0.04} className="h-full">
-            <PersonCard
+            <MemberCard
               name={member.name}
               initials={member.initials}
               focusAreas={member.focusAreas}
+              bio={member.bio}
+              photo={member.photo}
             />
           </Reveal>
         ))}

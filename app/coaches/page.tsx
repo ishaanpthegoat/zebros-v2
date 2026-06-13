@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/page-header";
 import { Reveal } from "@/components/reveal";
-import { PersonCard } from "@/components/person-card";
+import { MemberCard } from "@/components/member-card";
 import { coaches } from "@/data/coaches";
 
 export const metadata: Metadata = {
@@ -21,10 +21,11 @@ export default function CoachesPage() {
       <div className="mx-auto mt-12 grid max-w-2xl gap-4 sm:grid-cols-2">
         {coaches.map((coach, i) => (
           <Reveal key={coach.id} delay={i * 0.05} className="h-full">
-            <PersonCard
+            <MemberCard
               name={coach.name}
               initials={coach.initials}
               focusAreas={coach.focusAreas}
+              bio={coach.bio}
             />
           </Reveal>
         ))}
