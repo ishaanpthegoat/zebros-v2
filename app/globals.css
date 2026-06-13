@@ -128,5 +128,7 @@
   }
   html {
     @apply font-sans;
+    /* Keep anchored content clear of the sticky navbar (h-16). */
+    scroll-padding-top: 5rem;
   }
 }
