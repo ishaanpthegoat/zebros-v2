@@ -29,6 +29,7 @@ export const members: Member[] = [
     initials: "AP",
     focusAreas: ["Programming", "Social Media", "Project Management", "Script"],
     email: "avani.poondota@gmail.com",
+    photo: "/team/avani-poondota.png",
     bio: "Hey! I'm Avani, and I work on programming, social media, project management, and script. This is my 5th year doing robotics, and what I love about it is the creativity and competition. I also love connecting and spending time with the team and making fun memories!",
   },
   {
@@ -65,6 +66,7 @@ export const members: Member[] = [
     initials: "SP",
     focusAreas: ["Bot Maintenance", "Portfolio", "Mechanical"],
     email: "sanyap0206@gmail.com",
+    photo: "/team/sanya-patel.png",
     bio: "Hi, I'm Sanya! I work on the mechanical team, help maintain our robot between matches, and contribute to our team's portfolio. Keeping the robot in top condition during competitions is one of my main responsibilities, as it helps ensure everything runs smoothly when it's time to compete. I enjoy solving problems, working with my teammates, and helping our team perform at its best. More about me coming soon!",
   },
   {
@@ -73,6 +75,7 @@ export const members: Member[] = [
     initials: "VM",
     focusAreas: ["Bot Maintenance", "Portfolio", "Mechanical"],
     email: "virjamehta6@gmail.com",
+    photo: "/team/virja-mehta.png",
     bio: "Hey, I'm Virja! On the team, my role is to build, fix, and maintain the robot throughout the season and between matches, along with documenting our progress in the team portfolio. I love robotics because it allows me to demonstrate my interests in a competitive context, and besides the hard work, I also enjoy spending time with my team and all the fun memories we create along the way.",
   },
   {
