@@ -43,5 +43,10 @@ next-env.d.ts
 # claude code local settings
 .claude/settings.local.json
 
+# installed skills (local design tooling via `npx skills add`)
+/.agents/
+/skills-lock.json
+/.claude/skills/emil-design-eng
+
 # python
 __pycache__/

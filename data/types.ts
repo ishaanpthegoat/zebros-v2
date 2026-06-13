@@ -4,6 +4,7 @@
 
 // One source of truth for identity, contact, and social links.
 export interface SiteConfig {
+  url: string; // canonical site URL (for metadata, sitemap, OG)
   teamName: string; // "Zebros"
   teamNumber: string; // "30415"
   fullName: string; // "FTC Team 30415, Zebros"
@@ -57,6 +58,7 @@ export interface Member {
   name: string; // "Ishaan Pemmaraju"
   initials: string; // "IP" fallback avatar
   focusAreas: string[];
+  email?: string; // published with member consent
   photo?: string;
   bio?: string;
   funFact?: string;

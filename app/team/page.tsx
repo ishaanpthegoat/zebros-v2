@@ -22,6 +22,7 @@ export default function TeamPage() {
               name={member.name}
               initials={member.initials}
               focusAreas={member.focusAreas}
+              email={member.email}
               bio={member.bio}
               photo={member.photo}
             />

@@ -3,6 +3,7 @@ import type { SiteConfig } from "./types";
 // Single source of truth for identity, contact, and social links (PRD §10).
 // Used everywhere: footer, contact lines, page metadata, and the Social page.
 export const siteConfig = {
+  url: "https://zebrosrobotics.com",
   teamName: "Zebros",
   teamNumber: "30415",
   fullName: "FTC Team 30415, Zebros",

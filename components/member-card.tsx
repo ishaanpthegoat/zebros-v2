@@ -12,6 +12,7 @@ type Person = {
   name: string;
   initials: string;
   focusAreas: string[];
+  email?: string;
   bio?: string;
   photo?: string;
 };
@@ -71,7 +72,14 @@ function Chips({ items }: { items: string[] }) {
   );
 }
 
-export function MemberCard({ name, initials, focusAreas, bio, photo }: Person) {
+export function MemberCard({
+  name,
+  initials,
+  focusAreas,
+  email,
+  bio,
+  photo,
+}: Person) {
   const firstName = name.split(" ")[0];
 
   return (
@@ -131,6 +139,14 @@ export function MemberCard({ name, initials, focusAreas, bio, photo }: Person) {
             <Dialog.Description className="leading-relaxed text-muted-foreground">
               {bio ?? `More about ${firstName} coming soon.`}
             </Dialog.Description>
+            {email ? (
+              <a
+                href={`mailto:${email}`}
+                className="text-sm font-medium text-primary underline-offset-4 hover:underline"
+              >
+                {email}
+              </a>
+            ) : null}
           </div>
         </Dialog.Content>
       </Dialog.Portal>

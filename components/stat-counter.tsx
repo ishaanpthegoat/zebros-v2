@@ -26,10 +26,19 @@ export function StatCounter({ value, label }: { value: number; label: string }) 
 
   return (
     <div ref={ref} className="flex flex-col gap-1">
-      <span className="font-mono text-4xl font-bold tabular-nums text-foreground md:text-5xl">
+      <span
+        aria-hidden="true"
+        className="font-mono text-4xl font-bold tabular-nums text-foreground md:text-5xl"
+      >
         {display}
       </span>
-      <span className="text-sm text-muted-foreground">{label}</span>
+      <span aria-hidden="true" className="text-sm text-muted-foreground">
+        {label}
+      </span>
+      {/* Screen readers get the final value, not the mid-animation number. */}
+      <span className="sr-only">
+        {value} {label}
+      </span>
     </div>
   );
 }
